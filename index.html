@@ -23,6 +23,15 @@
     <!-- Custom styles for this template -->
     <link href="css/agency.min.css" rel="stylesheet">
 
+    <!-- Attempt to provide responsive line breaks -->
+    <style> 
+
+      @media screen and (min-width: 1200px){
+        .rwd-break { display: none; }
+      }
+
+    </style>
+
   </head>
 
   <body id="page-top">
@@ -61,7 +70,7 @@
     <header class="masthead">
       <div class="container">
         <div class="intro-text">
-          <div class="intro-heading">Moving data at the <br/> speed of light</div>
+          <div class="intro-heading">Moving information <br class="rwd-break" />at the <br/> speed of light</div>
         </div>
       </div>
     </header>
@@ -72,7 +81,9 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">About</h2>
-            <h3 class="section-subheading text-muted">High-bandwidth network fabrics made possible through <br/>fundamentally new hardware, software, and services.</h3>
+            <h4 class="section-subheading text-muted">Enabling networked systems to scale <br class="rwd-break" />
+              unimpeded by communication bottlenecks<br/>
+              via novel photonic technologies</h4>
           </div>
         </div>
         <!--
@@ -115,7 +126,35 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-6">
+
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/3.jpg" alt="Joseph Ford photo">
+              <h4>Joseph Ford</h4>
+              <p class="text-muted">Co-founder and VP Engineering</p>
+              <ul class="list-inline social-buttons">
+                <!--
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+              -->
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/joseph-ford-1008361/">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
             <div class="team-member">
               <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="Max Mellette photo">
               <h4>Max Mellette</h4>
@@ -142,9 +181,9 @@
             </div>
           </div>
 
-          <div class="col-sm-6">
+          <div class="col-sm-4">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="George Porter logo">
+              <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="George Porter photo">
               <h4>George Porter</h4>
               <p class="text-muted">Co-founder and Chief Scientist</p>
               <ul class="list-inline social-buttons">
@@ -181,29 +220,22 @@
             <h2 class="section-heading text-uppercase">Contact Us</h2>
             <h3 class="section-subheading text-muted"><a href=mailto:info@infocusnetworks.com>info@infocusnetworks.com</a></h3>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <span class="copyright">inFocus Networks | &copy; 2018 All rights reserved.</span>
-          </div>
-          <div class="col-md-4">
+          <div class="col-lg-12 text-center">
+          <!-- <div class="col-md-4"> -->
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
                 <a href="https://twitter.com/infocusnetworks">
                   <i class="fa fa-twitter"></i>
                 </a>
               </li>
+              <!--
               <li class="list-inline-item">
                 <a href="#">
                   <i class="fa fa-facebook"></i>
                 </a>
               </li>
+              -->
               <li class="list-inline-item">
                 <a href="https://www.linkedin.com/company/infocusnetworks/">
                   <i class="fa fa-linkedin"></i>
@@ -223,6 +255,23 @@
               -->
             </ul>
           </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-12 text-center">
+          <!-- <div class="col-md-4"> -->
+            <span class="copyright">inFocus Networks | &copy; 2020 All rights reserved.</span>
+          </div>
+          
+          <!-- ... -->
+
         </div>
       </div>
     </footer>
@@ -241,7 +290,6 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
-
 
   </body>
 </html>
